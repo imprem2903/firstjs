@@ -20,9 +20,9 @@
 // // console.log(timestamp.getTime());
 // console.log(Math.floor(Date.now()/1000))
 
-let newDate = new Date()
-newDate.toLocaleString("default", {
-        weekday: "narrow",
-        day: "numeric"
-})
-console.log(newDate.toLocaleString());
+// let newDate = new Date()
+// newDate.toLocaleString("default", {
+//         weekday: "narrow",
+//         day: "numeric"
+// })
+// console.log(newDate.toLocaleString());
