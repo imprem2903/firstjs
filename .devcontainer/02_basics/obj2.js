@@ -1,24 +1,24 @@
-// const thisSymbol = Symbol("symbol")
+const thisSymbol = Symbol("symbol")
 
-// const obj = {
-//     name: "Prem malhotra",
-//     [thisSymbol]: "lmao this a Symbol"
-// }
+const obj = {
+    name: "Prem malhotra",
+    [thisSymbol]: "lmao this a Symbol"
+}
 
-// console.log(obj);
+console.log(obj);
 
-// const person = {
-//     isHuman:{},
-//     introduction : function(){
-//         console.log(`My name is ${this.name} . Am I a human? ${this.isHuman}`);
-//     }
-// }
+const person = {
+    isHuman:{},
+    introduction : function(){
+        console.log(`My name is ${this.name} . Am I a human? ${this.isHuman}`);
+    }
+}
 
-// const me = Object.create(person);
-// me.name = "Prem Malhotra";
-// me.isHuman = "Yes you are." 
+const me = Object.create(person);
+me.name = "Prem Malhotra";
+me.isHuman = "Yes you are." 
 
-// me.introduction();
+me.introduction();
 
 const tinderUser = new Object()
 tinderUser.id = 1241
@@ -72,3 +72,14 @@ console.log(Object.entries(tinderUser));
 
 
 console.log(tinderUser.hasOwnProperty("isLoggedIn"));
+
+const course = {
+    coursename : "Master Js",
+    price: 500,
+    teacher: "Prem Malhotra"
+}
+
+const {teacher: prof} = course
+const {price: rupiya} = course
+
+console.log(rupiya);
