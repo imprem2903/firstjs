@@ -22,13 +22,13 @@ if (true){
 
 }
 
-function addone(num){
-    return num + 1          //Ye basic Function hai 
-}
-console.log(addone(2))
+// function addone(num){
+//     return num + 1          //Ye basic Function hai (Function Declaration)
+// }
+// console.log(addone(2))
               
-                                //ye dono methods hai functions banane ke
-const addTwo = function(num){
-    return num + 2                  //ye expression hai 
-}
-console.log (addTwo(5))
+//                                 //ye dono methods hai functions banane ke
+// const addTwo = function(num){
+//     return num + 2                  //ye expression hai 
+// }
+// console.log (addTwo(5))

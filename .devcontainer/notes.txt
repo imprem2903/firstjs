@@ -1,0 +1,43 @@
+            *************ABOUT IFFE*************
+            ************************************
+
+Immediately Invoked Function Expressions (IIFE) 
+Jaise hi function likha waise hi execute Karwana hai 
+
+Need & benefits of IIFE :
+    -Global Scope se pollute na hojae (x variable ki value nahi le)
+    -Application jaise hi start ho waise hi koi x kaam start ho jae
+
+    -Encapsulation:
+         They create a private scope for their code, protecting variables and functions from the global scope.
+    -Code organization:
+         They help organize and modularize your code, making it easier to manage and understand.
+    -Asynchronous capabilities: 
+        With `async` IIFEs, you can perform asynchronous operations without affecting the main execution flow. 
+
+IFFE likhne ke lie function ko `()` se cover karte hai 
+
+These code snippets involve three different ways of creating Immediately Invoked Function Expressions (IIFEs) in JavaScript. Here's a breakdown of each:
+
+
+*************Types of IFFEs**************
+1. `(function () { ... })();`
+    - This is the traditional way of defining an IIFE.
+    - It uses an anonymous function expression followed by  parentheses:
+        - The parentheses execute the function immediately after it's defined.
+        - This creates a new scope for the function's code, isolating it from the global scope.
+    - You can add code within the curly braces (`...`) to be executed immediately.
+
+2. `(() => { ... })();`
+    - This uses an arrow function as the anonymous function expression.
+    - Arrow functions provide a more concise syntax compared to traditional function expressions.
+    - Similar to the previous example, the parentheses immediately execute the function.
+
+3. `(async () => { ... })();`
+    - This uses an async arrow function to create an asynchronous IIFE.
+    - The `async` keyword allows the function to use the `await` keyword for asynchronous operations like fetching data.
+    - By executing immediately with parentheses, you create an asynchronous block that runs independently.
+
+
+            *************END OF IFFE*************
+
