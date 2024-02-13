@@ -41,3 +41,18 @@ These code snippets involve three different ways of creating Immediately Invoked
 
             *************END OF IFFE*************
 
+        ************Control flow**********
+        **********************************
+
+***Truthy OR Falsy***
+ falsy values
+    false, 0, -0, BigInt 0n,""(empty string),null,NaN,undefined
+
+ Truthy Values 
+    STRING KE ANDAR KAHANI BADAL JATI HAI   
+    "0", "false", " " (Ek space) ,[],{}, function(){}
+
+*** Nullish Coalescing Operator (??)***
+It returns the right hand side operand if
+the left value is nullish / falsy
+
