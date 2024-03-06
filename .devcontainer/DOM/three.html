@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chai Aur Code</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+
+
+    <script>
+
+       const headOne = document.createElement('h1')
+       console.log(headOne);
+       const headIng =  document.createTextNode("This is a Heading ")
+       headOne.appendChild(headIng)
+       
+       const div =  document.createElement('div')
+       console.log(div);
+       div.className = "main"
+       div.id = Math.round(Math.random()*10 + 1)
+       div.setAttribute('title', 'generated title')
+       div.style.backgroundColor='green'
+       div.style.padding='10px'
+    //    div.innerText = "Chai aur Code " 
+      const addText = document.createTextNode("Chai aur Code")
+      div.appendChild(addText)
+      document.body.appendChild(headIng)
+      document.body.appendChild(div)
+
+    </script>
+    
+</body>
+</html>

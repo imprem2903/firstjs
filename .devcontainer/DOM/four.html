@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Learn yourself</title>
+</head>
+<body style="background-color: black; color: antiquewhite;">    
+    <ul class="languages">
+        <li>Javascript</li>
+    </ul>
+
+<script>
+//List me element add karne ka ek tarika 
+            // Not a good practice 
+
+
+   const listElement =  document.createElement("li")
+   const newElement = document.createTextNode("Swift by Apple")
+   listElement.appendChild(newElement)
+   document.body.appendChild(listElement)
+   document.querySelector(".languages").appendChild(listElement)
+
+    function addLang(langName) {
+       const listItem =  document.createElement('li')
+       listItem.innerHTML = `${langName}`
+       document.querySelector(".languages").appendChild(listItem)
+    }
+    addLang("Python")
+    addLang("TypeScript")
+
+    function addOptiLang(langName) {    
+        const listElement = document.createElement('li')
+        listElement.appendChild(document.createTextNode(langName))
+        document.querySelector(".languages").appendChild(listElement)
+    }
+    addOptiLang("go-lang");
+
+//EDIT any value 
+//    const secondLang = document.querySelector("li:nth-child(2)")
+//    const newLi = document.createElement('li')
+//    newLi.textContent ="Momo"
+//    secondLang.replaceWith(newLi)
+
+//    const firstLang = document.querySelector("li:first-child")
+//    firstLang.outerHTML = '<li> TYPESCRIPT </li>'
+
+//Remove any value  
+
+// const lastLang = document.querySelector("li:last-child")
+// lastLang.remove()
+
+</script>
+</body>
+
+</html>
