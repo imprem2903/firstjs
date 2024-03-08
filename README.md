@@ -1,2 +1,2 @@
 # firstjs
-First Code Repository for JS
+ Code Repository for JS

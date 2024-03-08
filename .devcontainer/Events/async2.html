@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>async</title>
+</head>
+<body>
+        <h1>Async codes in Javascript </h1>    
+        <button id="start">start</button>
+        <button id="stop">Stop</button>
+
+</body>
+
+<script>
+
+    let startIt;
+
+    const sayDate = function(str){
+        console.log(str, Date.now());
+    }     
+  
+   document.querySelector("#start").addEventListener("click",function(){
+        startIt = setInterval(sayDate, 1000, "Hi" )
+   })
+   document.querySelector("#stop").addEventListener("click", function(){
+            clearInterval(startIt)
+            console.log("stopped");
+    })
+
+</script>
+</html>
